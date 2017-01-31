@@ -6,25 +6,27 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+
     <header class="main-header">
-      <div class="container">
-        <div class="main-page">
-          <a href="#">
-            <img src="img/main-page.png" alt="Main Page">
-          </a>
-        </div>
+      <div class="container clearfix">
         <div class="main-navigation">
+          <div class="main-page">
+            <a href="#">
+              <img src="img/main-page.png" alt="Main Page">
+            </a>
+          </div>
+          <div class="main-navigation">
           <ul>
-            <li>
+            <li class="left-side">
               <a href="#">Информация</a>
             </li>
-            <li>
-              <a href="#">Фото и видео</a>
+            <li class="left-side">
+                <a href="#">Фото и видео</a>
             </li>
-            <li>
+            <li class="right-side">
               <a href="#">Карта штата</a>
             </li>
-            <li>
+            <li class="right-side">
               <a href="#">Гостинницы</a>
             </li>
           </ul>
@@ -33,7 +35,7 @@
     </header>
 
     <main class="container">
-      <div class="catalog-filter">
+      <div class="catalog-filter clearfix">
         <form action="#" method="get">
           <div class="infrastructure-filter">
           <p class="filter-name">Инфраструктура</p>
@@ -69,26 +71,22 @@
             <p class="filter-name">Стоимость в сутки (P):</p>
             <input type="text" value="от 0">
             <input type="text" value="до 3000">
-          </div>
-          <div class="form-button">
+            <div class="form-button">
             <input type="submit" value="Показать">
+          </div>
           </div>
         </form>
       </div>
 
-      <section class="results">
+      <section class="results clearfix">
         <div class="left-block">
           <div class="results-number">Найдено: 3</div>
-          <div class="results-sorting">Сортировка</div>
-          <div class="sorting-item">
-            <a href=#>По цене</a>
-          </div>
-          <div class="sorting-item">
-            <a href=#>По типу</a>
-          </div>
-          <div class="sorting-item">
-            <a href=#>По рейтингу</a>
-          </div>
+        </div>
+        <div class="middle-block">
+          <span class="results-sorting">Сортировка</span>
+          <a class="sorting-item" href=#>По цене</a>
+          <a class="sorting-item" href=#>По типу</a>
+          <a class="sorting-item" href=#>По рейтингу</a>
         </div>
         <div class="right-block">
           <a href="#">
@@ -101,11 +99,11 @@
       </section>
 
       <div class="results-group">
-       <article class="catalog-item">
+       <article class="catalog-item clearfix">
          <div class="left-column">
-           <figure class="item-image">
-             <img src="img/hotel1.jpg" alt="Amara resort & spa">
-            </figure>
+          <img src="img/hotel1.jpg" alt="Amara resort & spa">
+         </div>
+         <div class="middle-column">
             <h3 class="item-name">Amara resort & spa</h3>
             <div class="item-info">
               <span class="info">Гостинница</span>
@@ -122,11 +120,11 @@
            <p class="rating-mark">Рейтинг: 8,5</p>
          </div>
        </article> 
-       <article class="catalog-item">
+       <article class="catalog-item clearfix">
          <div class="left-column">
-           <figure class="item-image">
-             <img src="img/hotel2.jpg" alt="Desert Quail Inn">
-            </figure>
+           <img src="img/hotel2.jpg" alt="Desert Quail Inn">
+          </div>
+         <div class="middle-column">
             <h3 class="item-name">Desert Quail Inn</h3>
             <div class="item-info">
               <span class="info">Мотель</span>
@@ -143,11 +141,11 @@
            <p class="rating-mark">Рейтинг: 8,9</p>
          </div>
        </article>
-       <article class="catalog-item">
+       <article class="catalog-item clearfix">
          <div class="left-column">
-           <figure class="item-image">
-             <img src="img/hotel3.jpg" alt="Villas At Poco Diablo">
-            </figure>
+           <img src="img/hotel3.jpg" alt="Villas At Poco Diablo">
+         </div>
+         <div class="middle-column">
             <h3 class="item-name">Villas At Poco Diablo</h3>
             <div class="item-info">
               <span class="info">Апартаменты</span>
@@ -167,8 +165,8 @@
       </div>
     </main>
 
-    <footer class="main-footer">
-      <div class="container">
+     <footer class="main-footer">
+      <div class="container clearfix">
         <section class="footer-hashtag">
           <b>#visitsedona</b>
         </section>
@@ -180,7 +178,7 @@
         <section class="footer-copyright">
           <a class="btn" href="https://htmlacademy.ru">
             <img src="img/html.png" alt="htmlacademy.ru">
-          </a>
+            </a>
         </section>
       </div>
     </footer>

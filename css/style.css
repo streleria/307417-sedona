@@ -6,15 +6,15 @@ body {
 	font-family: "PT Sans", sans-serif, Arial;
 	letter-spacing: 0;
 	text-align: center;
+	background-color: #f0f0f0;
 }
 
-
-
-.main-navigation li {
+.main-navigation {
 	font-size: 14px;
 	line-height: 26px;
-	color: #000000;
 	font-weight: bold;
+	color: #000000;
+	
 }
 
 .promo b,
@@ -37,3 +37,258 @@ h2{
 	line-height: 21px;
 	color: #666666;
 }
+
+/* СЕТКА*/
+
+.container {
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.main-page {
+	position: absolute;
+	left: 566px;
+}
+
+ul {
+	list-style: none;
+}
+
+.left-side {
+	box-sizing: border-box;
+	width: 239px;
+	height: 56px;
+	float: left;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-right: 72px;
+}
+
+.right-side {
+	box-sizing: border-box;
+	width: 239px;
+	float: right;
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+.index-logo {
+	width: 1200px;
+	height: 509px;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.promo {
+	box-sizing: border-box;
+	width: 576px;
+	height: 216px;
+	margin: 0 auto;
+	padding-top: 63px;
+}
+
+.advantages {
+	width: 100%;
+}
+
+.advantages-description-left {
+	background-color: #81b3d2;
+	color: #ffffff;
+	box-sizing: border-box;
+	width: 400px;
+	height: 256px;
+	padding: 56px 60px;
+	text-align: center;
+	float: left;
+}
+
+.advantages-photo-right {
+	width: 800px;
+	height: 256px;
+	background-size: cover;
+	overflow: hidden;
+	float: right;
+}
+
+.advantages-photo-left {
+	width: 800px;
+	height: 256px;
+	background-size: cover;
+	overflow: hidden;
+	float: left;
+}
+
+.advantages-description-right {
+	background-color: #81b3d2;
+	color: #ffffff;
+	box-sizing: border-box;
+	width: 400px;
+	height: 256px;
+	padding: 56px 60px;
+	text-align: center;
+	float: right;
+}
+
+.features-item {
+	box-sizing: border-box;
+	width: 400px;
+	height: 333px;
+	padding-top: 162px;
+	float: left;
+}
+
+.advantages-item {
+	box-sizing: border-box;
+	width: 400px;
+	height:256px;
+	padding-top: 47px;
+	float: left;
+	background-color: #f0f0f0; 
+}
+
+.offer-block {
+	width: 1200px;
+	height: 291px;
+}
+
+.offer {
+	box-sizing: border-box;
+	width: 576px;
+	height: 205px;
+	margin: 0 auto;
+	padding-top: 56px;
+}
+
+.hotels-search {
+	box-sizing: border-box;
+	width: 576px;
+	height: 87px;
+	margin: 0 auto;
+	background-color: #766357;
+	color: #ffffff;
+	padding-top: 15px;
+}
+
+.search-field {
+	width: 1200px;
+	height: 472px;
+	background-color: #f0f0f0;
+}
+
+.search-form {
+	box-sizing: border-box;
+	width: 576px;
+	height: 395px;
+	margin: 0 auto;
+	background-color: #ffffff;
+}
+
+.footer-hashtag {
+	box-sizing: border-box;
+	width: 242px;
+	height: 121px;
+	padding: auto;
+	padding-top: 50px;
+	margin-right: 88px;
+	margin-left: 71px;
+	float: left;
+}
+
+.footer-social {
+	box-sizing: border-box;
+	width: 400px;
+	height: 121px;
+	padding: auto;
+	padding-top: 50px;
+	float: left;
+}
+
+.footer-copyright {
+	box-sizing: border-box;
+	width: 242px;
+	height: 121px;
+	padding: auto;
+	padding-top: 35px;
+	margin-right: 70px;
+	margin-left: 85px; 
+	float: right;
+}
+
+.infrastructure-filter,
+.type-filter {
+	box-sizing: border-box;
+	width: 196px;
+	height: 218px;
+	margin-right: 60px;
+	float: left;
+}
+
+.price-filter {
+	box-sizing: border-box;
+	width: 242px;
+	height: 218px;
+	margin-left: 73px;
+	float: right;
+}
+
+.left-block {
+	box-sizing: border-box;
+	width: 172px;
+	height: 86px;
+	margin-right: 60px;
+	float: left;
+}
+
+.middle-block {
+	box-sizing: border-box;
+	width: 360px;
+	height: 86px;
+	float: left;
+}
+
+.right-block {
+	box-sizing: border-box;
+	width: 260px;
+	height: 86px;
+	margin-left: 50px;
+	float: right;
+	padding-right: 20px; 
+}
+
+.left-column {
+	box-sizing: border-box;
+	width: 172px;
+	height: 150px;
+	margin-right: 60px;
+	float: left;
+}
+
+.middle-column {
+	box-sizing: border-box;
+	width: 360px;
+	height: 150px;
+	float: left;
+}
+
+.right-column {
+	box-sizing: border-box;
+	width: 260px;
+	height: 150px;
+	margin-left: 50px;
+	float: right;
+	padding-right: 20px; 
+}
+
+
+
+
+
+
