@@ -3,37 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   
   <body>
     <header class="main-header">
-      <div class="container clearfix">
+      <div class="container">
         <div class="main-navigation">
           <div class="main-page">
             <a href="#">
               <img src="img/main-page.png" alt="Main Page">
             </a>
           </div>
-          <div class="main-navigation">
-          <ul>
-            <li class="left-side">
+           <ul class="navigation clearfix">
+            <li class="navigation-item left-side">
               <a href="#">Информация</a>
             </li>
-            <li class="left-side">
+            <li class="navigation-item left-side">
                 <a href="#">Фото и видео</a>
             </li>
-            <li class="right-side">
-              <a href="#">Карта штата</a>
-            </li>
-            <li class="right-side">
+            <li class="navigation-item right-side">
               <a href="#">Гостинницы</a>
+            </li>
+            <li class="navigation-item right-side">
+              <a href="#">Карта штата</a>
             </li>
           </ul>
          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
     <main class="container">
       <div class="index-logo">
@@ -44,88 +44,88 @@
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <div class="advantages clearfix">
-        <div class="advantages-description-left">
-          <p class="advantages-title">Настоящий городок</p>
-          <p>№1</p>
-          <p>Седона - не атракцион для туристов, там течет своя жизнь
+        <div class="advantages-description left-side">
+          <p class="advantages-description-title">Настоящий <br>городок</p>
+          <p class="advantages-description-text">№1</p>
+          <p>Седона - не атракцион для туристов, <br>там течет своя жизнь
           </p>
         </div>
-        <div class="advantages-photo-right">
+        <div class="advantages-photo right-side">
           <img src="img/img1.jpg" alt="Sedona veiw">
         </div>
       </div>
-      <section class="features">
-        <div class="features-item">
-          <p class="features-title">Жилье</p>
+      <section class="features clearfix">
+        <div class="features-item first-item">
+          <p class="features-item-title">Жилье</p>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div class="features-item">
-          <p class="features-title">Еда</p>
+        <div class="features-item second-item">
+          <p class="features-item-title">Еда</p>
           <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь
           </p>
         </div>
-        <div class="features-item clearfix">
-          <p class="features-title">Сувениры</p>
+        <div class="features-item third-item">
+          <p class="features-item-title">Сувениры</p>
           <p>Не только китайского, но и местного производства!</p>
         </div>
       </section>
-      <div class="advantages">
-        <div class="advantages-photo-left">
+      <div class="advantages clearfix ">
+        <div class="advantages-photo left-side">
           <img src="img/img2.jpg" alt="Sedona veiw">
         </div>
-        <div class="advantages-description-right">
-          <p class="advantages-title">Там есть мост дьявола</p>
-          <p>№2</p>
+        <div class="advantages-description right-side">
+          <p class="advantages-description-title">Там есть <br>мост дьявола</p>
+          <p class="advantages-description-text">№2</p>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </div>
       <section class="other-advantages clearfix">
-      	<div class="advantages-item">
-      	  <p class="advantages-item-title">Небольшая площадь</p>
-      	  <p>№3</p>
+      	<div class="other-advantages-item">
+      	  <p class="other-advantages-item-title">Небольшая <br>площадь</p>
+      	  <p class="other-advantages-item-text">№3</p>
       	  <p>Все достопримечательности находятся очень близко</p>
       	</div>
-      	<div class="advantages-item">
-      	  <p class="advantages-item-title">Красивая дорога</p>
-      	  <p>№4</p>
+      	<div class="other-advantages-item">
+      	  <p class="other-advantages-item-title">Красивая <br>дорога</p>
+      	  <p class="other-advantages-item-text">№4</p>
       	  <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       	</div>
-      	<div class="advantages-item">
-      	  <p class="advantages-item-title">Мало туристов</p>
-      	  <p>№5</p>
+      	<div class="other-advantages-item">
+      	  <p class="other-advantages-item-title">Мало <br>туристов</p>
+      	  <p class="other-advantages-item-text">№5</p>
       	  <p>Большинство едет в Гранд Каньон и толпится там</p>
       	</div>
       </section> 
       <div class="offer-block">
         <div class="offer">
           <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостинниц в Седоне</p>
-        </div>
-        <div class="hotels-search">
-          <h3>Поиск гостинницы в седоне</h3>
+          <p>Укажите предполагаемые даты поездки, <br>и мы покажем Вам лучшие предложения гостинниц в Седоне</p>
         </div>
       </div>
       <div class="search-field">
+        <div class="hotels-search">
+          <h3>Поиск гостинницы в седоне</h3>
+        </div>
         <form class="search-form" action="#" method="get">
           <div class="date-field">
-            <label for="arriving-date">Дата заезда:
-              <input type="text" name="date" id="arriving-date">
-            </label>
+            <label for="arriving-date">Дата заезда:</label>
+            <input type="text" name="date" id="arriving-date" value="24 апреля 2017">
+            <span class="calendar"></span>
           </div>
           <div class="date-field">
-            <label for="leaving-date">Дата выезда:
-              <input type="text" name="date" id="leaving-date">
-            </label>
+            <label for="leaving-date">Дата выезда:</label>
+            <input type="text" name="date" id="leaving-date" value="4 июля 2017">
+            <span class="calendar"></span>
           </div>
-          <div class="visitors-field">
-            <label for="adults">Взрослые:
-              <input type="text" name="date" id="adults">
-            </label>
-          </div>
-          <div class="visitors-field">
-            <label for="children">Дети:
-              <input type="text" name="date" id="children">
-            </label>
+          <div class="visitors-field-row">
+            <div class="visitors-field">
+              <label for="adults">Взрослые:</label>
+              <input type="text" name="date" id="adults" value="2">
+            </div>
+            <div class="visitors-field">
+              <label for="children">Дети:</label>
+              <input type="text" name="date" id="children" value="0">
+            </div>
           </div>
           <button class="btn" type="submit">Найти</button>
         </form>
@@ -143,7 +143,7 @@
           <a class="social-btn social-btn-ytb" href="#">Youtube</a>
         </section>
         <section class="footer-copyright">
-          <a class="btn" href="https://htmlacademy.ru">
+          <a class="btn" href="https://htmlacademy.ru">website by
             <img src="img/html.png" alt="htmlacademy.ru">
             </a>
         </section>

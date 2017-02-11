@@ -3,40 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="main-header">
-      <div class="container clearfix">
+      <div class="container">
         <div class="main-navigation">
           <div class="main-page">
             <a href="#">
               <img src="img/main-page.png" alt="Main Page">
             </a>
           </div>
-          <div class="main-navigation">
-          <ul>
-            <li class="left-side">
+           <ul class="navigation clearfix">
+            <li class="navigation-item left-side">
               <a href="#">Информация</a>
             </li>
-            <li class="left-side">
+            <li class="navigation-item left-side">
                 <a href="#">Фото и видео</a>
             </li>
-            <li class="right-side">
-              <a href="#">Карта штата</a>
-            </li>
-            <li class="right-side">
+            <li class="navigation-item right-side">
               <a href="#">Гостинницы</a>
             </li>
+            <li class="navigation-item right-side">
+              <a href="#">Карта штата</a>
+            </li>
           </ul>
+         </div>
         </div>
-      </div>
-    </header>
+      </header>
 
     <main class="container">
-      <div class="catalog-filter clearfix">
-        <form action="#" method="get">
+      <div class="catalog-filter">
+        <form class="catalog-filter-form clearfix" action="#" method="get">
           <div class="infrastructure-filter">
           <p class="filter-name">Инфраструктура</p>
             <div class="filter-item">
@@ -78,17 +79,15 @@
         </form>
       </div>
 
-      <section class="results clearfix">
-        <div class="left-block">
-          <div class="results-number">Найдено: 3</div>
+      <section class="selection-field clearfix">
+        <div class="selection-number">Найдено: 3</div>
+        <div class="selection-options-row">
+          <span class="selection-options-title">Сортировка</span>
+          <a class="selection-group active" href=#>По цене</a>
+          <a class="selection-group" href=#>По типу</a>
+          <a class="selection-group" href=#>По рейтингу</a>
         </div>
-        <div class="middle-block">
-          <span class="results-sorting">Сортировка</span>
-          <a class="sorting-item" href=#>По цене</a>
-          <a class="sorting-item" href=#>По типу</a>
-          <a class="sorting-item" href=#>По рейтингу</a>
-        </div>
-        <div class="right-block">
+        <div class="order-selection">
           <a href="#">
             <img src="img/up-arrow.png" alt="up-arrow">
           </a>
@@ -115,7 +114,7 @@
             </div>
          </div>
          <div class="right-column">
-           <div class="5-star-rating">
+           <div class="five-star-rating">
            </div>
            <p class="rating-mark">Рейтинг: 8,5</p>
          </div>
@@ -136,7 +135,7 @@
             </div>
          </div>
          <div class="right-column">
-           <div class="3-star-rating">
+           <div class="three-star-rating">
            </div>
            <p class="rating-mark">Рейтинг: 8,9</p>
          </div>
@@ -157,7 +156,7 @@
             </div>
          </div>
          <div class="right-column">
-           <div class="2-star-rating">
+           <div class="two-star-rating">
            </div>
            <p class="rating-mark">Рейтинг: 9,2</p>
          </div>
@@ -176,7 +175,7 @@
           <a class="social-btn social-btn-ytb" href="#">Youtube</a>
         </section>
         <section class="footer-copyright">
-          <a class="btn" href="https://htmlacademy.ru">
+          <a class="btn" href="https://htmlacademy.ru">website by
             <img src="img/html.png" alt="htmlacademy.ru">
             </a>
         </section>
