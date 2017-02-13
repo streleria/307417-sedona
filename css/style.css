@@ -24,13 +24,6 @@ body {
 	font-weight: bold;
 }
 
-h2{
-	font-size: 30px;
-	line-height: 30px;
-	color: #000000;
-	font-weight: bold;
-}
-
 .rating-mark {
 	font-size: 14px;
 	line-height: 21px;
@@ -40,6 +33,7 @@ h2{
 /* СЕТКА*/
 .main-header {
 	min-width: 1200px;
+	z-index: 100;
 }
 
 .container {
@@ -47,6 +41,8 @@ h2{
 	position: relative;
 	margin: 0 auto;
 	background-color: #ffffff;
+	box-shadow: 3px 0 10px 0 rgba(0, 0, 0, 0.1),
+				-3px 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .clearfix::after {
@@ -58,7 +54,7 @@ h2{
 .main-page {
 	position: absolute;
 	left: 566px;
-	z-index: 1;
+	z-index: 100;
 }
 
 .navigation {
@@ -72,6 +68,14 @@ h2{
 	min-width: 239px;
 	min-height: 56px;
 	line-height: 56px;
+}
+
+.navigation-item>a:hover {
+	color: #81b3d2;
+}
+
+.navigation-item>a:active {
+	color: #cacaca;
 }
 
 .left-side {
@@ -95,6 +99,10 @@ h2{
 .navigation-item a {
 	text-decoration: none;
 	color: #000000;
+}
+
+.navigation-item>a.active {
+	color: #766357
 }
 
 main {
@@ -221,7 +229,7 @@ p.advantages-description-title {
     background-repeat: no-repeat;
     width: 75px;
     height: 72px;
-    background-position: -10px -316px;
+    background-position: -10px -760px;
 }
 
 .features-item.second-item {
@@ -238,7 +246,7 @@ p.advantages-description-title {
     background-repeat: no-repeat;
     width: 74px;
     height: 70px;
-    background-position: -10px -408px;
+    background-position: -10px -852px;
 }
 
 .features-item.third-item {
@@ -255,7 +263,7 @@ p.advantages-description-title {
     background-repeat: no-repeat;
     width: 64px;
     height: 76px;
-    background-position: -10px -498px;
+    background-position: -10px -942px;
 }
 
 .features-item-title {
@@ -357,11 +365,15 @@ p.other-advantages-item-title {
 	z-index: 100;
 }
 
-.hotels-search h3{
+.hotels-search>a{
+	display: block;
+	color: #FFF;
 	font-size: 21px;
 	line-height: 87px;
-	margin: 0;
+	font-weight: bold;
 	text-align: center;
+	margin: 0;
+	text-decoration: none;
 }
 
 .search-form {
@@ -375,6 +387,8 @@ p.other-advantages-item-title {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
+	box-shadow: 3px 0 10px 0 rgba(0, 0, 0, 0.1),
+				-3px 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .date-field {
@@ -409,6 +423,15 @@ p.other-advantages-item-title {
 	border: hidden;
 }
 
+.date-field > input:hover {
+	background-color: #ebebeb;
+}
+
+.date-field > input:focus {
+	background-color: #ffffff;
+	outline-color: #ebebeb;
+}
+
 .date-field {
 	position: relative;
 }
@@ -422,6 +445,14 @@ p.other-advantages-item-title {
     width: 21px;
     height: 22px;
     background-position: -10px -121px;
+}
+
+.calendar:hover {
+	background-position: -10px -163px;
+}
+
+.calendar:active {
+	background-position: -10px -205px;
 }
 
 .visitors-field {
@@ -445,6 +476,7 @@ div.visitors-field:first-child {
 
 .visitors-field>input {
 	display: inline-block;
+	position: relative;
 	box-sizing: border-box;
 	height: 40px;
 	width: 120px;
@@ -460,8 +492,102 @@ div.visitors-field:first-child {
 	border: hidden;
 }
 
+.visitors-field > input:hover {
+	background-color: #ebebeb;
+}
+
+.visitors-field > input:focus {
+	background-color: #ffffff;
+	outline-color: #ebebeb;
+}
+
 .input-elements {
 	position: relative;
+}
+
+.input-elements:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 7px;
+    background-position: -10px -1038px;
+    bottom: 14px;
+    left: 120px;
+}
+
+.input-elements:hover:before {
+	background-position: -10px -1084px;
+}
+
+.input-elements:active:before {
+	background-position: -10px -1061px;
+}
+
+.input-elements:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 11px;
+    background-position: -10px -1107px;
+    bottom: 15px;
+    left: 200px;
+}
+
+.input-elements:hover:after {
+	background-position: -10px -1169px;
+}
+
+.input-elements:active:after {
+	background-position: -10px -1138px;
+}
+
+.input-elements.positioner:before {
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 10px;
+    background-position: -10px -1038px;
+    bottom: 11px;
+    left: 85px;
+}
+
+.input-elements.positioner:hover:before {
+	background-position: -10px -1084px;
+}
+
+.input-elements.positioner:active:before {
+	background-position: -10px -1061px;
+}
+
+
+.input-elements.positioner:after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 11px;
+    background-position: -10px -1107px;
+    bottom: 14px;
+    left: 168px;
+}
+
+.input-elements.positioner:hover:after {
+	background-position: -10px -1169px;
+}
+
+.input-elements.positioner:active:after {
+	background-position: -10px -1138px;
 }
 
 button.btn {
@@ -477,7 +603,15 @@ button.btn {
 	text-transform: inherit;
 	font-style: inherit;
 	font-weight: bold;
-	box-shadow: none;
+}
+
+button.btn:hover {
+	background-color: #669ec0;
+}
+
+button.btn:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .main-footer>.container {
@@ -522,19 +656,31 @@ button.btn {
     background: #81b3d2;
  }
 
+ .social-btn:hover {
+ 	background-color: #669ec0;
+ }
+
+  .social-btn:active {
+ 	background-color: #5496bd;
+ 	opacity: 50%
+ }
+
 .social-btn-tw::before {
 	content: "";
 	display: table;
 	position: absolute;
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-color: #81b3d2;
     width: 17px;
     height: 15px;
-    background-position: -10px -648px;
+    background-position: -10px -1200px;
     left:50%;
     bottom: 50%;
     transform: translate(-50%, 50%);
+}
+
+.social-btn-tw:active:before {
+	opacity: 0.5;
 }
 
 .social-btn-fb::before {
@@ -543,13 +689,16 @@ button.btn {
 	position: absolute;
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-color: #81b3d2;
 	width: 10px;
     height: 19px;
-    background-position: -10px -277px;
+    background-position: -10px -505px;
     left:50%;
     bottom: 50%;
     transform: translate(-50%, 50%);
+}
+
+.social-btn-fb:active:before {
+	opacity: 0.5;
 }
 
 .social-btn-ytb::before {
@@ -558,16 +707,17 @@ button.btn {
 	position: absolute;
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	background-color: #81b3d2;
 	width: 20px;
     height: 16px;
-    background-position: -10px -713px;
+    background-position: -10px -1325px;
     left:50%;
     bottom: 50%;
     transform: translate(-50%, 50%);
+} 
+
+.social-btn-ytb:active:before {
+	opacity: 0.5;
 }
-
-
 
 .footer-copyright {
 	box-sizing: border-box;
@@ -588,13 +738,25 @@ button.btn {
 	color: #000000;
 }
 
-.footer-copyright img {
+.footer-copyright a:after {
+	content: "";
 	position: absolute;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	width: 113px;
+    height: 39px;
+    background-position: -10px -583px;
 	top: 40px;
 	transform: translateX(3px)
 }
 
+.footer-copyright a:hover:after {
+	background-position: -10px -642px;
+}
 
+.footer-copyright a:active:after {
+	background-position: -10px -701px;
+}
 
 /* CATALOG*/
 
@@ -611,25 +773,11 @@ button.btn {
 	color: #ffffff;
 }
 
-
-.filter-name {
-	font-size: 16px;
-	line-height: 21px;
-	font-weight: bold;
-	color: #ffffff;
-}
-
-.catalog-filter label {
-	font-size: 14px;
-	line-height: 45px;
-	color: #ffffff;
-}
-
 .infrastructure-filter,
 .type-filter {
 	box-sizing: border-box;
 	width: 196px;
-	height: 218px;
+	margin-top: 25px;
 	margin-right: 60px;
 	float: left;
 
@@ -639,16 +787,191 @@ button.btn {
 	margin-left: 70px;
 }
 
-.price-filter {
-	box-sizing: border-box;
-	width: 242px;
-	height: 218px;
-	margin-left: 73px;
-	float: right;
+.filter-name {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #ffffff;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.catalog-filter label {
+	font-size: 14px;
+	line-height: 45px;
+	color: #ffffff;
+}
+
+.filter-item>input[type="checkbox"] {
+	display: none;
 }
 
 .filter-item>label {
-	margin-left: 15px;
+	margin-left: 30px;
+	position: relative;
+	cursor: pointer;
+}
+
+.filter-item>input[type="checkbox"] + label:before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	width: 22px;
+    height: 22px;
+    background-position: -10px -247px;
+    left: -30px;
+    top: -1px;
+}
+
+.filter-item>input[type="checkbox"]:checked + label:before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/sprite.png");
+	background-repeat: no-repeat;
+	width: 26px;
+    height: 22px;
+    background-position: -10px -331px;
+    left: -30px;
+    top: -1px;
+}
+
+.filter-range {
+	box-sizing: border-box;
+	width: 330px;
+	margin-right: 70px;
+	margin-top: 25px;
+	float: right;
+
+	color: #ffffff;
+  	text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
 }
 
 .selection-field {
@@ -710,6 +1033,15 @@ button.btn {
 	border-bottom: none;
 }
 
+.selection-group:hover {
+	color: #81b3d2;
+}
+
+.selection-group:active {
+	color: #000000;
+	border-bottom: none;
+}
+
 .order-selection {
 	box-sizing: border-box;
 	width: 65px;
@@ -719,8 +1051,36 @@ button.btn {
 }
 
 .order-selection>a {
+	display: inline-block;
 	text-decoration: none;
-	padding-right: 3px;
+	background-image: url("../img/sprite.png"); 
+	width: 11px;
+    height: 10px;
+	padding-right: 10px;
+}
+
+.up-arrow {
+	background-position: -10px -1235px;
+}
+
+.up-arrow:hover {
+	background-position: -10px -1265px
+}
+
+.up-arrow:active {
+	background-position: -10px -1295px;
+}
+
+.down-arrow.active {
+	background-position: -10px -475px;
+}
+
+.down-arrow:hover {
+	background-position: -10px -445px;
+}
+
+.down-arrow:active {
+	background-position: -10px -475px;
 }
 
 .catalog-item {
@@ -753,7 +1113,17 @@ button.btn {
 	font-size: 21px;
 	line-height: 25px;
 	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
 	margin: 0px;
+}
+
+.item-name:hover {
+	color: #81b3d2;
+}
+
+.item-name:active {
+	color: #cacaca;
 }
 
 .info {
@@ -778,6 +1148,15 @@ button.btn {
 	text-align: center;
 }
 
+.item-more:hover {
+	background-color: #669ec0;
+}
+
+.item-more:active {
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.5);
+}
+
 .item-booking {
 	display: inline-block;
 	width: 147px;
@@ -791,6 +1170,15 @@ button.btn {
 	font-style: bold;
 	text-decoration: none;
 	text-align: center;
+}
+
+.item-booking:hover {
+	background-color: #604e43; 
+}
+
+.item-booking:active {
+	background-color: #503e33; 
+	color: rgba(255, 255, 255, 0.5);
 }
 
 .right-column {
@@ -841,7 +1229,7 @@ button.btn {
 /* SPRITE */
 
 .sprite {
-	background-image: url("../img/sprite.png");
+    background-image: url(spritesheet.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -870,79 +1258,173 @@ button.btn {
     background-position: -10px -121px;
 }
 
+.sprite-calendar-act {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -163px;
+}
+
+.sprite-calendar-click {
+    width: 21px;
+    height: 22px;
+    background-position: -10px -205px;
+}
+
 .sprite-checkbox {
     width: 22px;
     height: 22px;
-    background-position: -10px -163px;
+    background-position: -10px -247px;
+}
+
+.sprite-checkbox-act {
+    width: 22px;
+    height: 22px;
+    background-position: -10px -289px;
 }
 
 .sprite-checked {
     width: 26px;
     height: 22px;
-    background-position: -10px -205px;
+    background-position: -10px -331px;
+}
+
+.sprite-checked-act {
+    width: 26px;
+    height: 22px;
+    background-position: -10px -373px;
 }
 
 .sprite-down-arrow {
     width: 11px;
     height: 10px;
-    background-position: -10px -247px;
+    background-position: -10px -415px;
+}
+
+.sprite-down-arrow-act {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -445px;
+}
+
+.sprite-down-arrow-click {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -475px;
 }
 
 .sprite-facebook {
     width: 10px;
     height: 19px;
-    background-position: -10px -277px;
+    background-position: -10px -505px;
+}
+
+.sprite-fb-active {
+    width: 10px;
+    height: 19px;
+    background-position: -10px -544px;
+}
+
+.sprite-html {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -583px;
+}
+
+.sprite-html-act {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -642px;
+}
+
+.sprite-html-click {
+    width: 113px;
+    height: 39px;
+    background-position: -10px -701px;
 }
 
 .sprite-icon-1 {
     width: 75px;
     height: 72px;
-    background-position: -10px -316px;
+    background-position: -10px -760px;
 }
 
 .sprite-icon-2 {
     width: 74px;
     height: 70px;
-    background-position: -10px -408px;
+    background-position: -10px -852px;
 }
 
 .sprite-icon-3 {
     width: 64px;
     height: 76px;
-    background-position: -10px -498px;
+    background-position: -10px -942px;
 }
 
 .sprite-minus {
     width: 12px;
     height: 3px;
-    background-position: -10px -594px;
+    background-position: -10px -1038px;
+}
+
+.sprite-minus-act {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -1061px;
+}
+
+.sprite-minus-click {
+    width: 12px;
+    height: 3px;
+    background-position: -10px -1084px;
 }
 
 .sprite-plus {
     width: 11px;
     height: 11px;
-    background-position: -10px -617px;
+    background-position: -10px -1107px;
+}
+
+.sprite-plus-act {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -1138px;
+}
+
+.sprite-plus-click {
+    width: 11px;
+    height: 11px;
+    background-position: -10px -1169px;
 }
 
 .sprite-twitter {
     width: 17px;
     height: 15px;
-    background-position: -10px -648px;
+    background-position: -10px -1200px;
 }
 
 .sprite-up-arrow {
     width: 11px;
     height: 10px;
-    background-position: -10px -683px;
+    background-position: -10px -1235px;
+}
+
+.sprite-up-arrow-act {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -1265px;
+}
+
+.sprite-up-arrow-click {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -1295px;
 }
 
 .sprite-youtube {
     width: 20px;
     height: 16px;
-    background-position: -10px -713px;
+    background-position: -10px -1325px;
 }
-
-
 
 
 
