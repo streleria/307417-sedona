@@ -97,6 +97,7 @@ main {
 }
 
 .index-logo {
+	background-color: #2e434e;
 	position: relative;
 	width: 1200px;
 	height: 509px;
@@ -520,17 +521,17 @@ div.visitors-field:first-child {
 .add-btn{
 	background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
-    background-position: 5px -1095px;
+    background-position: 5px -1092px;
     
 }
 
 .add-btn:hover {
-	background-position: 5px -1126px;
+	background-position: 5px -1124px;
 	cursor: pointer;
 }
 
 .add-btn:active {
-	background-position: 5px -1156px;
+	background-position: 5px -1154px;
 	outline: none;
 	cursor: pointer;
 }
@@ -1196,10 +1197,6 @@ button.btn:active {
 	font-size: 14px;
 	color: #666666;
 }
-}
-
-
-
 
 /* SPRITE */
 
