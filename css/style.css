@@ -9,27 +9,6 @@ body {
 	margin: 0;
 }
 
-.main-navigation {
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: bold;
-	color: #000000;
-	
-}
-
-.promo b {
-	font-size: 21px;
-	line-height: 26px;
-	color: #000000;
-	font-weight: bold;
-}
-
-.rating-mark {
-	font-size: 14px;
-	line-height: 21px;
-	color: #666666;
-}
-
 /* СЕТКА*/
 .main-header {
 	min-width: 1200px;
@@ -63,9 +42,17 @@ body {
 	padding: 0;
 }
 
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+	
+}
+
 .navigation-item {
 	box-sizing: border-box;
-	min-width: 239px;
+	min-width: 165px;
 	min-height: 56px;
 	line-height: 56px;
 }
@@ -88,12 +75,12 @@ body {
 
 .navigation-item.right-side {
 	text-align: right;
-	padding-right: 73px;
+	margin-right: 73px;
 }
 
 .navigation-item.left-side {
 	text-align: left;
-	padding-left: 73px;
+	margin-left: 73px;
 }
 
 .navigation-item a {
@@ -136,10 +123,20 @@ main {
 .promo {
 	box-sizing: border-box;
 	width: 576px;
-	height: 216px;
+	min-height: 216px;
 	margin: 0 auto;
 	padding-top: 63px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
 	text-align: center;
+}
+
+.promo b {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
 }
 
 .advantages {
@@ -151,8 +148,8 @@ main {
 	color: #ffffff;
 	box-sizing: border-box;
 	width: 400px;
-	height: 256px;
-	padding: 56px 45px;
+	min-height: 256px;
+	padding: 55px 45px;
 	text-align: center;
 	font-size: 14px;
 	line-height: 21px;
@@ -160,6 +157,7 @@ main {
 
 .advantages-description p {
 	margin-top: 20px;
+	margin-bottom: 0;
 }
 
 p.advantages-description-title {
@@ -207,7 +205,7 @@ p.advantages-description-title {
 .features-item {
 	box-sizing: border-box;
 	width: 400px;
-	height: 333px;
+	min-height: 333px;
 	padding-top: 162px;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -281,7 +279,7 @@ p.advantages-description-title {
 	text-align: center;
 	box-sizing: border-box;
 	width: 400px;
-	height: 256px;
+	min-height: 256px;
 	padding: 40px 70px;
 	text-align: center;
 	font-size: 14px;
@@ -329,7 +327,7 @@ p.other-advantages-item-title {
 
 .offer-block {
 	width: 1200px;
-	height: 291px;
+	min-height: 291px;
 }
 
 .offer {
@@ -337,10 +335,14 @@ p.other-advantages-item-title {
 	width: 576px;
 	height: 205px;
 	margin: 0 auto;
-	padding-top: 26px;
+	padding-top: 40px;
 	text-align: center;
 	font-size: 14px;
 	line-height: 24px;
+}
+
+.offer h2 {
+	font-size: 30px;
 }
 
 .search-field {
@@ -397,6 +399,7 @@ p.other-advantages-item-title {
 
 .date-field > label {
 	display: inline-block;
+	vertical-align: baseline;
 	min-height: 26px;
 	min-width: 100px;
 	margin-right: 15px;
@@ -409,6 +412,7 @@ p.other-advantages-item-title {
 
 .date-field > input {
 	display: inline-block;
+	vertical-align: baseline;
 	box-sizing: border-box;
 	height: 40px;
 	width: 345px;
@@ -455,9 +459,12 @@ p.other-advantages-item-title {
 	background-position: -10px -205px;
 }
 
+
 .visitors-field {
 	display: inline-block;
+	vertical-align: top;
 	position: relative;
+	font-size: 0px;
 }
 
 div.visitors-field:first-child {
@@ -466,6 +473,7 @@ div.visitors-field:first-child {
 
 .visitors-field > label {
 	display: inline-block;
+	vertical-align: baseline;
 	margin-right: 30px;
 	background-color: #ffffff;
 	color: #565656;
@@ -476,20 +484,18 @@ div.visitors-field:first-child {
 
 .visitors-field>input {
 	display: inline-block;
-	position: relative;
 	box-sizing: border-box;
 	height: 40px;
-	width: 120px;
-	padding-left: 10px;
+	width: 40px;
 	background-color: #f2f2f2;
 	color: #565656;
 	text-transform: inherit;
 	font-style: inherit;
 	font-size: 14px;
-	line-height: 26px;
 	font-weight: bold;
 	text-align: center;
 	border: hidden;
+	vertical-align: top;
 }
 
 .visitors-field > input:hover {
@@ -501,93 +507,49 @@ div.visitors-field:first-child {
 	outline-color: #ebebeb;
 }
 
-.input-elements {
-	position: relative;
+.visitors-btn {
+	display: inline-block;
+	box-sizing: border-box;
+	height: 40px;
+	width: 40px;
+	background-color: #f2f2f2;
+	border: none;
+	vertical-align: top;
 }
 
-.input-elements:before {
-	content: "";
-	display: block;
-	position: absolute;
+.add-btn{
 	background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
-    width: 20px;
-    height: 7px;
-    background-position: -10px -1038px;
-    bottom: 14px;
-    left: 120px;
+    background-position: 5px -1095px;
+    
 }
 
-.input-elements:hover:before {
-	background-position: -10px -1084px;
+.add-btn:hover {
+	background-position: 5px -1126px;
+	cursor: pointer;
 }
 
-.input-elements:active:before {
-	background-position: -10px -1061px;
+.add-btn:active {
+	background-position: 5px -1156px;
+	outline: none;
+	cursor: pointer;
 }
 
-.input-elements:after {
-	content: "";
-	display: block;
-	position: absolute;
+.del-btn {
 	background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
-    width: 11px;
-    height: 11px;
-    background-position: -10px -1107px;
-    bottom: 15px;
-    left: 200px;
+    background-position: 5px -1020px;
 }
 
-.input-elements:hover:after {
-	background-position: -10px -1169px;
+.del-btn:hover {
+	background-position: 5px -1043px;
+	cursor: pointer;
 }
 
-.input-elements:active:after {
-	background-position: -10px -1138px;
-}
-
-.input-elements.positioner:before {
-	content: "";
-	display: block;
-	position: absolute;
-	background-image: url("../img/sprite.png");
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 10px;
-    background-position: -10px -1038px;
-    bottom: 11px;
-    left: 85px;
-}
-
-.input-elements.positioner:hover:before {
-	background-position: -10px -1084px;
-}
-
-.input-elements.positioner:active:before {
-	background-position: -10px -1061px;
-}
-
-
-.input-elements.positioner:after {
-	content: "";
-	display: block;
-	position: absolute;
-	background-image: url("../img/sprite.png");
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 11px;
-    background-position: -10px -1107px;
-    bottom: 14px;
-    left: 168px;
-}
-
-.input-elements.positioner:hover:after {
-	background-position: -10px -1169px;
-}
-
-.input-elements.positioner:active:after {
-	background-position: -10px -1138px;
+.del-btn:active {
+	background-position: 5px -1065px;
+	outline: none;
+	cursor: pointer;
 }
 
 button.btn {
@@ -607,6 +569,7 @@ button.btn {
 
 button.btn:hover {
 	background-color: #669ec0;
+	cursor: pointer;
 }
 
 button.btn:active {
@@ -658,11 +621,13 @@ button.btn:active {
 
  .social-btn:hover {
  	background-color: #669ec0;
+ 	cursor: pointer;
  }
 
   .social-btn:active {
  	background-color: #5496bd;
- 	opacity: 50%
+ 	opacity: 50%;
+ 	cursor: pointer;
  }
 
 .social-btn-tw::before {
@@ -835,6 +800,7 @@ button.btn:active {
     left: -30px;
     top: -1px;
 }
+
 
 .filter-range {
 	box-sizing: border-box;
@@ -1009,6 +975,7 @@ button.btn:active {
 
 .selection-options-title {
 	display: inline-block;
+	vertical-align: top;
 	margin: 37px 15px;
 	margin-right: 25px;
 	font-size: 12px;
@@ -1018,6 +985,7 @@ button.btn:active {
 
 .selection-group {
 	display: inline-block;
+	vertical-align: top;
 	margin: 37px 15px;
 	margin-right: 20px;
 	font-size: 12px;
@@ -1052,6 +1020,7 @@ button.btn:active {
 
 .order-selection>a {
 	display: inline-block;
+	vertical-align: baseline;
 	text-decoration: none;
 	background-image: url("../img/sprite.png"); 
 	width: 11px;
@@ -1128,6 +1097,7 @@ button.btn:active {
 
 .info {
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 10px;
 	padding-top: 7px;
 	padding-right: 15px;
@@ -1136,6 +1106,7 @@ button.btn:active {
 
 .item-more {
 	display: inline-block;
+	vertical-align: top;
 	width: 112px;
 	height: 28px;
 	margin-top: 5px;
@@ -1159,6 +1130,7 @@ button.btn:active {
 
 .item-booking {
 	display: inline-block;
+	vertical-align: top;
 	width: 147px;
 	height: 28px;
 	margin-top: 5px;
@@ -1221,6 +1193,9 @@ button.btn:active {
 	margin-top: 40px;
 	text-align: center;
 	background-color: #f2f2f2;
+	font-size: 14px;
+	color: #666666;
+}
 }
 
 
