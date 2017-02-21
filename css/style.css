@@ -32,8 +32,15 @@ body {
 
 .main-page {
 	position: absolute;
-	left: 566px;
+	left: 50%;
 	z-index: 100;
+	transform: translate(-50%, 0);
+	text-align: center;
+	background-image: url("../img/main-page-mask.png");
+	background-repeat: no-repeat;
+	width: 140px;
+	height: 70px;
+
 }
 
 .navigation {
@@ -117,6 +124,7 @@ main {
     height: 57px;
     content: "";
     background-image: url("../img/mask.png");
+    background-repeat: no-repeat;
     background-position: bottom;
     z-index: 1
 }
@@ -202,6 +210,9 @@ p.advantages-description-title {
 	overflow: hidden;
 }
 
+.features {
+	min-height: 333px;
+}
 
 .features-item {
 	box-sizing: border-box;
@@ -210,6 +221,7 @@ p.advantages-description-title {
 	padding-top: 162px;
 	padding-left: 50px;
 	padding-right: 50px;
+	padding-bottom: 10px;
 	text-align: center;
 	float: left;
 }
@@ -274,6 +286,11 @@ p.advantages-description-title {
 	padding-bottom: 10px;
 }
 
+.other-advantages {
+	min-height: 256px;
+    background-color: #f0f0f0;
+}
+
 .other-advantages-item {
 	color: #000000;
 	background-color: #f0f0f0; 
@@ -334,12 +351,13 @@ p.other-advantages-item-title {
 .offer {
 	box-sizing: border-box;
 	width: 576px;
-	height: 205px;
+	min-height: 205px;
 	margin: 0 auto;
 	padding-top: 40px;
 	text-align: center;
 	font-size: 14px;
 	line-height: 24px;
+	padding-bottom: 90px;
 }
 
 .offer h2 {
@@ -588,18 +606,18 @@ button.btn:active {
 .footer-hashtag {
 	box-sizing: border-box;
 	width: 242px;
-	padding: auto;
 	font-size: 21px;
+	text-align: center;
 	font-weight: bold;
 	line-height: 120px;
-	margin-left: 90px;
+	margin-left: 75px;
 	float: left;
 }
 
 .footer-social {
 	box-sizing: border-box;
 	width: 400px;
-	margin-left: 90px;
+	margin-left: 80px;
 	text-align: center;
 	float: left;
 }
@@ -607,9 +625,9 @@ button.btn:active {
 .social-btn {
 
     display: inline-block;
-    width: 43px;
-    height: 43px;
-    margin: 0 2px;
+    width: 46px;
+    height: 48px;
+    margin: 0 1px;
     margin-top: 35px;
 
     font-size: 0;
@@ -688,8 +706,7 @@ button.btn:active {
 .footer-copyright {
 	box-sizing: border-box;
 	width: 240px;
-	margin-left: 95px;
-	padding: auto;
+	margin-left: 104px;
 	float: left;
 }
 
@@ -700,7 +717,7 @@ button.btn:active {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 26px;
-	padding-top: 50px;
+	padding-top: 48px;
 	color: #000000;
 }
 
@@ -713,7 +730,7 @@ button.btn:active {
     height: 39px;
     background-position: -10px -583px;
 	top: 40px;
-	transform: translateX(3px)
+	transform: translateX(7px)
 }
 
 .footer-copyright a:hover:after {
@@ -727,7 +744,7 @@ button.btn:active {
 /* CATALOG*/
 
 .catalog-filter {
-	height: 218px;
+	min-height: 218px;
 	box-sizing: border-box;
 	background-color: #486378;
 	background-image: url("../img/filter-background.jpg");
@@ -745,6 +762,7 @@ button.btn:active {
 	width: 196px;
 	margin-top: 25px;
 	margin-right: 60px;
+	margin-bottom: 10px;
 	float: left;
 
 }
@@ -949,7 +967,7 @@ button.btn:active {
 .selection-number {
 	box-sizing: border-box;
 	width: 140px;
-	height: 86px;
+	min-height: 86px;
 	margin-left: 55px;
 	padding-left: 15px;
 	float: left;
@@ -963,7 +981,7 @@ button.btn:active {
 .selection-options-row {
 	box-sizing: border-box;
 	width: 500px;
-	height: 86px;
+	min-height: 86px;
 	float: left;
 	margin-left: 25px;
 	font-size: 0;
@@ -1055,13 +1073,14 @@ button.btn:active {
 
 .catalog-item {
 	border-bottom: 1px solid #f0f0f0;
-	height: 150px;
+	min-height: 150px;
+	padding-bottom: 10px;
 }
 
 .left-column {
 	box-sizing: border-box;
 	width: 135px;
-	height: 90px;
+	min-height: 90px;
 	margin-left: 70px;
 	margin-right: 20px;
 	margin-top: 35px;
@@ -1071,7 +1090,7 @@ button.btn:active {
 .middle-column {
 	box-sizing: border-box;
 	width: 300px;
-	height: 150px;
+	min-height: 150px;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-top: 35px;
@@ -1108,8 +1127,8 @@ button.btn:active {
 .item-more {
 	display: inline-block;
 	vertical-align: top;
-	width: 112px;
-	height: 28px;
+	min-width: 112px;
+	min-height: 28px;
 	margin-top: 5px;
 	background-color: #81b3d2;
 	color: #ffffff;
@@ -1132,8 +1151,8 @@ button.btn:active {
 .item-booking {
 	display: inline-block;
 	vertical-align: top;
-	width: 147px;
-	height: 28px;
+	min-width: 147px;
+	min-height: 28px;
 	margin-top: 5px;
 	margin-left: 5px;
 	background-color: #766357;
@@ -1157,31 +1176,35 @@ button.btn:active {
 .right-column {
 	box-sizing: border-box;
 	width: 260px;
-	height: 150px;
+	min-height: 150px;
 	margin-left: 50px;
 	float: right;
 	padding-right: 20px;
 }
 
 .five-star-rating {
-	height: 17px;
+	width: 89px;
+    height: 17px;
 	margin-top: 30px;
 	margin-right: 58px;
-	background: url("../img/5-stars.png") no-repeat right;
+	background: url("../img/sprite.png") no-repeat -10px -84px;
+	transform: translate(100%, 0);
 }
 
 .three-star-rating {
 	height: 17px;
 	margin-top: 30px;
 	margin-right: 58px;
-	background: url("../img/3-stars.png") no-repeat right;
+	background: url("../img/sprite.png") no-repeat -10px -47px;
+	transform: translate(65%, 0);
 }
 
 .two-star-rating {
 	height: 17px;
 	margin-top: 30px;
 	margin-right: 58px;
-	background: url("../img/2-stars.png") no-repeat right;
+	background: url("../img/sprite.png") no-repeat -10px -10px;
+	transform: translate(75%, 0);
 }
 
 .rating-mark {
